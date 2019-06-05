@@ -125,7 +125,7 @@ public class DefaultFormatPrinter implements FormatPrinter {
         final String[] urlLine = {URL_TAG + responseUrl, N};
 
         LogUtils.debugInfo(tag, RESPONSE_UP_LINE);
-        logLines(tag, urlLine, true);
+        logLines(tag, urlLine, false);
         logLines(tag, getResponse(headers, chainMs, code, isSuccessful, segments, message), true);
         logLines(tag, responseBody.split(LINE_SEPARATOR), true);
         LogUtils.debugInfo(tag, END_LINE);
