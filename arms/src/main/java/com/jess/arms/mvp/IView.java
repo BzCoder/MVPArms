@@ -53,6 +53,13 @@ public interface IView {
     }
 
     /**
+     * 显示友好界面
+     */
+    default void showError() {
+
+    }
+
+    /**
      * 显示信息
      *
      * @param message 消息内容, 不能为 {@code null}
